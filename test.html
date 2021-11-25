@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="typeSport.css">
+    <link rel="stylesheet" href="mediatypeSport.css">
+</head>
+<body>
+     <!--header-section-->
+      <header>
+        <a href="#" class="logo"><img src="logo.png"/></a>
+        <input type="checkbox" name="" class="btnc"/>
+        <div class="nav">
+        <ul class="navigation">
+            <li><a href="#Home" >Home</a></li>
+            <li><a href="#about" >About us</a></li>
+            <li class="sub-menus"><a href="#Product" >Product</a>
+                <ul>
+                    <li><a href="#">Fitness</a></li>
+                    <li><a href="#">Zumba</a></li>
+                    <li><a href="#">Kickboxing</a></li>
+                 </ul>
+            </li>
+            <li><a href="#Contact" >Contact</a></li>
+        </ul>
+    </div>
+    </header>
+    <!--main-menu-->
+    <section class="banner" id="banner">
+        <div class="contentt">
+            <video autoplay muted loop id="myVideo">
+                <source src="main.mp4" type="video/mp4">
+            </video>
+            
+             <div class="text">
+                <h1 style="color: #EF6824;">ZUMBA</h1>
+                <h2>Blast that music and work it out.
+                </h2>
+            </div> 
+        </div>
+    </section>
+        <div class="flex">
+            
+            <div class="image">
+                <img src="IMG/BOX1.png" alt="Snow">
+                <div class="centered">
+                    <div class="bb">
+                        MEN
+                    </div>
+                 
+                    <input type="button" class="btn-first" value="More &#160; &#160;>" onclick="location.href='#';">
+        
+                </div>
+            </div>
+            <div class="image">
+                <img src="IMG/BOX2.png" alt="Snow">
+                <div class="centered">
+                    <div class="bb">
+                        WOMEN
+                    </div>
+                 
+                    <input type="button" class="btn-first" value="More &#160; &#160;>" onclick="location.href='more.html';">
+        
+                </div>
+            </div>
+        
+        </div>
+        
+   
+     <!--main-footer-->
+     <div class="fimg">
+        <img src="fotter.svg"/>
+    </div>
+     <footer>
+        <!--  footer list  -->
+        
+        <div class="footer_top">
+            <ul>
+                <li class="list_title">Contact Us</li><br>
+                <li><a class="afoter" href="#">Street Al Hamra, Asilah</a></li>
+                <li><a class="afoter" href="#">(+212) 6 59 77 08 95</a></li>
+                <li><a class="afoter" href="#">support@tiger.com</a></li><br>
+                <li>
+                    <div class="share">
+                        <ol>
+                            <li><a href="#"><img src="facebook.png"></a></li>
+                            <li><a href="#"><img src="Instagram.png"></a></li>
+                            <li><a href="#"><img src="twitter.png"></a></li>
+                            <li><a href="#"><img src="Instagram.png"></a></li>
+                        </ol>
+                        <div class="toggle"></div>
+                    </div>
+                </li>
+
+            </ul>
+            <ul>
+              
+                <li class="map">
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe width="100%" height="230" id="gmap_canvas" src="https://maps.google.com/maps?q=Av%20Errachidia%20Asilah%2090050%D8%8C%20Av.%20Errachidia,%20Asilah&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+
+                            </iframe>
+                            <a href="https://fmovies-online.net"></a><br>
+                            <style>.mapouter{position:relative;text-align:center;height:230px;width:100%;}</style>
+                            <a href="https://www.embedgooglemap.net">google map embed code</a>
+                            <style>.gmap_canvas {overflow:hidden;background:none!important;height:230px;width:100%;}</style>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            
+         
+        </div>
+    </footer>
+
+    <!--  footer copyright  -->
+    <div class="copyrightText">
+        <p>Copyright ©  2000-2021 <a href="#">Tiger club</a>. All Right Reserved</p>
+
+    </div>
+    <script>
+        const toggle=document.querySelector('.toggle');
+        toggle.addEventListener('click',()=>{
+            const sharebtn=document.querySelector('.share');
+            sharebtn.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
+  

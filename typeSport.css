@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Rufina&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rufina', serif;
+  
+}
+body{
+    background-color:#383838 ;
+}
+
+.flex {
+    display: flex;
+    margin-top: 144px;
+    margin-bottom: 144px;
+}
+
+.image{
+    width: 50%;
+    position: relative;
+}
+.image img{
+    WIDTH: 100%;
+    HEIGHT: 84%;
+    position: relative;
+}
+.centered {
+    display: flex;
+    flex-direction: column;
+    POSITION: absolute;
+    TOP: 38%;
+    left: 27%;
+}
+.centered h1 {
+    TOP: 21%;
+left: 44%;
+}
+
+.btn-first {
+    /* MARGIN: 32PX; */
+    background-color: #EF6824;
+    color: white;
+    padding: 18px;
+    margin-left: 74px;
+    border: none;
+    cursor: pointer;
+    width: 58%;
+    border-radius: 5px;
+    opacity: 1;
+    font-weight: bold;
+    FONT-SIZE: 30PX;
+    BORDER-RADIUS: 20PX;
+    MARGIN-TOP: 15PX;
+}
+
+.btn-first:hover {
+    background-color: #e44848;
+    cursor: pointer;
+  }
+
+
+h1 {
+    font-size: 100PX;
+}
+
+.bb {
+    width: 343PX;
+    HEIGHT: 89PX;
+    background-color: #211F20;
+    font-size: 69PX;
+    text-align: center;
+    border-radius: 15PX;
+    color: white;
+}
+
+/*******************navbar***************************/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 20px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    background-color: #211F20;
+}
+.nav{
+
+    display: flex;
+    list-style: none;
+} 
+.nav .navigation{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.nav .navigation li{
+    list-style: none;
+    margin: 1em;
+}
+.nav .navigation li a{
+    text-decoration: none;
+    padding: 0.2em 1.2em 0.9em 1.2em;
+    border-radius: 10px 10px 0 0;
+    color: rgb(253, 253, 253);
+    font-weight: 300;
+    transition: all .4s;
+    position: relative;
+    z-index: 1;
+}
+.nav .navigation li a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px 10px 0 0;
+    background: #EF6824;
+    transform-origin: bottom;
+    background: linear-gradient(to right, #383838 , #EF6824);
+    transform: scaleY(0.05);
+    z-index: -1;
+    transition: all .4s;
+}
+.nav .navigation li a:hover::before{
+    transform: scaleY(1.1);
+}
+.nav .navigation li a:hover{
+    color: white;
+}
+.btnc{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    display: none;
+}
+.btnc::before{
+    content: url(menu_50px.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    font-size: 2em;
+}
+  header .logo img {
+    width: 150px;
+  }
+  .sub-menus ul {
+    position: absolute;
+    top: 80px;
+    background-color: #383838;
+    padding: 5px 0px;
+    min-width: 150px;
+    box-shadow: 0px 0px 8px #383838;
+    border-radius: 4px;
+    display: none;
+}
+.sub-menus:hover ul {
+    display: block;
+}
+.sub-menus ul li {
+    padding: 5px 0px;
+}
+.sub-menus ul li a {
+    padding: 8px 10px;
+    display: block;
+    color: #fff;
+}
+.sub-menus ul li:hover a {
+    color: #fff;
+}
+.sub-menus ul::before {
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #383838;
+    position: absolute;
+    top: -9px;
+    
+}
+
+/*******************header***************************/
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+  } 
+.banner .contentt {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+  }
+  #myVideo{  
+    width: 100%;
+    height: 100vh; 
+    object-fit: cover;
+    position:absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+.text{
+    color: rgb(255, 255, 255);
+    
+    font-weight: bold;
+    text-align: center;
+    
+  } 
+.text h1 {
+    font-size: 60px;
+    line-height: 200%; 
+  }
+.text h2 { 
+    font-size: 30px; 
+  }
+/*********************/
+
+footer {
+    background: #0D0C0C;
+    
+}
+
+.footer_top {
+    display: flex;
+    justify-content:space-around;
+    padding: 2.5em 0;
+}
+
+.footer_top li {
+    line-height: 2rem;
+}
+
+.footer_top li a:hover {
+    color: #EF6824;
+}
+
+footer ul {
+    list-style: none;
+    font-size: 20px;
+    margin-left: 3%;
+}
+
+.list_title {
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+}
+
+.afoter {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.list_title {
+    color: white;
+    font-weight: 400;
+}
+.toggle{
+    width: 50px;
+    height: 50px;
+    background: #0D0C0C;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+.toggle::before{
+    content: url(icones/share.png);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: #ffffff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 22px;
+}
+.share.active .toggle::before{
+    content: url(delete_50px.png);
+    font-size: 2rem;
+}
+.share{
+    position: relative;
+}
+.share ol{
+    position: absolute;
+    margin: 2px;
+    width: 50px;
+    height: 50px;
+}
+.share ol li{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background:#0D0C0C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all .4s;
+}
+.share ol li a{
+    color: black;
+}
+.share.active ol li{
+    transform: translate(0);
+    transition: all 0.4s;
+}
+.share.active ol li:nth-child(1){
+    transition-delay: 0.1s;
+    transform: translateX(60px);
+}
+
+.share.active ol li:nth-child(3){
+    transition-delay: 0.3s;
+    transform: translateX(-60px);
+}
+.share.active ol li:nth-child(4){
+    transition-delay: 0.4s;
+    transform: translateY(-60px);
+}
+.fimg{
+    display: flex;
+  }
+/*****************footer copyright*********************/
+
+.copyrightText {
+    padding: 8px 40px;
+    background-color:#EF6824 ;
+}
+
+.copyrightText p {
+    color: rgb(0, 0, 0);
+}
+
+.copyrightText a {
+   color: #181516;
+   font-weight: 500;
+   text-decoration: none;
+}

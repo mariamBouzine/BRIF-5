@@ -1,0 +1,119 @@
+@media only screen  and (max-width:450px){
+    /**************nav bar***************/
+
+    .description{
+        FONT-SIZE: 16PX;
+    }
+
+    header{    
+        justify-content: space-between;
+        width: 375PX;
+    }
+    .nav{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        background: #737373;
+        transform: translateY(-110%);
+        transition: all .4s;
+    }
+    input:checked ~ .nav{
+        transform: translateY(0%);
+    }
+    input:checked::before{
+        content: url(delete_50px.png);
+    }
+    .sub-menus ul {
+        position: static;
+    }
+    .sub-menus ul::before {
+        display: none;
+    }
+    .nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    #myVideo{
+        width:100%;
+    }
+    .first-title h1 {
+        font-size: 20px;
+    }
+    .first-title  h2{
+        font-size: 20px;
+    }
+
+    .btnc{
+        padding: 20px;
+        display: flex;
+        z-index: 100;
+    }
+
+    /**************table******* start********/
+
+/* control font table*/
+
+    .Schedule {
+    
+        font-size: 50PX;
+       
+    }
+    
+    /* control padding*/
+
+      .table-scg th {
+        padding: 10px;
+    }
+
+    
+    /* for hide month*/
+
+    H3 {
+        display: none;
+      }
+      
+
+      /* for expose month*/
+      span {
+        display: block;
+      }
+
+      
+      /* control icone image inside table*/
+    .table-scg img {
+        width: 20PX;
+        height: 20PX;
+    
+    }
+    
+
+    
+    /**************table******* end********/
+  
+
+    /**************footer******* start********/
+ .footer_top {
+    display: block;
+    
+}
+.content{
+    margin: 10px;
+}
+.white .titleText{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.map {
+    padding-right: 10px;
+}
+
+/**************footer******* end********/
+}
+
+
+
+
+  
